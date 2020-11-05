@@ -1,14 +1,13 @@
-numpy>=1.9.2
-scipy>=0.15.1
-scikit-learn==0.22.1
-matplotlib>=1.4.3
-pandas>=0.19
-Cython==0.24
+numpy==1.18.4
+scipy==1.4.1
+matplotlib==1.4.3
+pandas==1.1.2
+Cython==0.29.21
 fbprophet==0.1.post1
-pystan==2.14.0.0
-python-dateutil==2.6.0
-pytz==2016.10
-six==1.10.0
+pystan==2.19.1.1
+python-dateutil==2.8.1
+pytz==2020.1
+scikit-learn==0.23.1
 streamlit
 
 
