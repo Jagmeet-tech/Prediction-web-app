@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from fbprophet import Prophet
-from fbprophet.diagnostics import performance_metrics
-from fbprophet.diagnostics import cross_validation
-from fbprophet.plot import plot_cross_validation_metric
+#from fbprophet.diagnostics import performance_metrics
+#from fbprophet.diagnostics import cross_validation
+#from fbprophet.plot import plot_cross_validation_metric
 import base64
 
 st.title('Automated Time Series Forecasting')            #this is the title of the application. 
