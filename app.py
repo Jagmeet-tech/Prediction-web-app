@@ -14,7 +14,6 @@ st.set_option('deprecation.showfileUploaderEncoding', False)  #this is the induc
 df = st.file_uploader('Import the time series csv file here. Columns must be labeled ds and y. The input to Prophet is always a dataframe with two columns: ds and y. The ds (datestamp) column should be of a format expected by Pandas, ideally YYYY-MM-DD for a date or YYYY-MM-DD HH:MM:SS for a timestamp. The y column must be numeric, and represents the measurement we wish to forecast.', type='csv', encoding='auto')
 # following the above command you may add any pdf you want but in the above given format only after filtering the data on the basis of the correlation matrix
 if df is not None:
-    uploaded_file.seek(0)
     data = pd.read_csv(df,delim_whitespace=True)     #now we read the csv dataframe file if not none
     data['ds'] = pd.to_datetime(data['ds'],errors='coerce')     #This is the datestream column in the above given format , errors are acutally removed earlier but if they weren't so we added the errors to be pointed out
     
